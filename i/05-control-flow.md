@@ -17,6 +17,8 @@
 ## Exception handling
 
   * Simple exception handling (try-except)
+      - simple zerodiv example
   * Cleanup (try-finally)
+      - open and close file
   * Complex exception handling (try-except-else-finally)
       - Example: exception.py

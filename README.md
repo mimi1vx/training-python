@@ -21,21 +21,22 @@ Python I (2 days)
 Python II (3 days)
 
   * 00 – Overview of topics from previous course
-          - Variables, identity, assignment, data types
-          - Scripting, modules, packages
-  * 01 – Python versions and 3.x and 2.x differences
-          - Future features
-
-
-  * ? list comprehensions
-  * 02 – Packages, modules, import/__import__
+           - Variables, identity, assignment, data types
+           - Modules, packages, scripting
+           - Basic input and output
+  * 01 – Project organization
+           - Packages, modules and scripts
+           - Installation information
+  * 02 – Python versions and 3.x and 2.x differences
+           - Future features
   * 03 – Functions, argument list, argument dictionary
   * 04 – Inline documentation
+
   * 05 – Classes, methods, attributes
   * 06 – Special methods, class and static methods
+
   * 07 – Decorators, closures and nonlocal
   * 08 – Generators and iterators
-
 
   * HTTP application options
   * Custom exceptions
@@ -47,6 +48,8 @@ Python II (3 days)
   * Dynamic code generation
   * Parallel programming, threads and processes
   * Available literature
+
+  * ? list comprehensions
 
 Notes:
 
