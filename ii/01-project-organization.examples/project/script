@@ -1,0 +1,9 @@
+#!/usr/bin/python
+# encoding: utf-8
+
+from __future__ import print_function
+
+import package.subpackage.module
+
+example = package.subpackage.module.Example()
+print(example.text)
