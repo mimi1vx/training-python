@@ -3,3 +3,5 @@
 ## Inheritance and constructors
 
 Example: shapes.py
+
+TODO: isinstance
