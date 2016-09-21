@@ -1,8 +1,16 @@
 # Recapitulation of expected Python skills
 
-## Composite data types
+## Interactive interpretter
 
-  * list, tupe
+  * python/python2/python3
+
+## Basic and composite data types
+
+  * int, float
+      - division, modulo, power
+  * str
+      - concatenation, pyth
+  * list, tuple
   * dict, set
 
 ## Variables, identity, assignment

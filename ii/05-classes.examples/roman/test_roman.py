@@ -19,7 +19,7 @@ known_numerals = (
     ('MIX', 1009),
 )
 correct_numerals = ('I', 'V', 'IV')
-incorrect_numerals = ('IIII', 'VIV', 'IVI', 'B', 'MMMM', '0', '1', 'IM', 'CIVIL', 'DIM', 'VIXI', 'XIVI', 'VLIV', 'CIL', 'MIC')
+incorrect_numerals = ('', 'IIII', 'VIV', 'IVI', 'B', 'MMMM', '0', '1', 'IM', 'CIVIL', 'DIM', 'VIXI', 'XIVI', 'VLIV', 'CIL', 'MIC')
 
 class IsRoman(unittest.TestCase):
     def test_correct_numerals(self):
@@ -27,20 +27,21 @@ class IsRoman(unittest.TestCase):
         for numeral in correct_numerals:
             self.assertTrue(roman.Roman.is_roman_numeral(numeral),
                 msg="'{0}' is not an incorrect numeral.".format(numeral))
+            self.assertEqual(numeral, str(roman.Roman(numeral)))
 
     def test_incorrect_numerals(self):
         """Roman.is_roman_numeral should return False for strings that are not roman numerals."""
         for numeral in incorrect_numerals:
             self.assertFalse(roman.Roman.is_roman_numeral(numeral),
                 msg="'{0}' is a correct numeral.".format(numeral))
-
-    def test_empty(self):
-        self.assertFalse(roman.Roman.is_roman_numeral(''))
+            self.assertRaises(ValueError, roman.Roman, numeral)
 
     def test_bad_type(self):
         """Roman.is_roman_numeral should raise TypeError for non-string arguments"""
         for numeral in (None, 0, 1, 1.0):
             self.assertRaises(TypeError, roman.Roman.is_roman_numeral, numeral)
+        for obj in (None, 1.0):
+            self.assertRaises(TypeError, roman.Roman, numeral)
 
 class FromInteger(unittest.TestCase):
     def test_known_numerals(self):

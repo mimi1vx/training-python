@@ -61,3 +61,9 @@ Accepting arguments:
         print(kargs)
 
 Note: Distinction between passing a list/dict and passing positional/keyword arguments from a list/dict using */** notation.
+
+TODO: functools.partial and its source code
+
+## Decorators
+
+Example: benchmark.py

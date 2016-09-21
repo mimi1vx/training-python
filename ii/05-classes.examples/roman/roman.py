@@ -47,6 +47,8 @@ class Roman(object):
 
     def __init__(self, obj):
         if (isinstance(obj, str)):
+            if not self.is_roman_numeral(obj):
+                raise ValueError("Incorrect roman numeral: {}".format(obj))
             self._numeral = obj
         elif (isinstance(obj, int)):
             n = obj
@@ -55,6 +57,8 @@ class Roman(object):
                 while value <= n:
                     self._numeral += digit
                     n -= value
+        else:
+            raise TypeError("Roman numbers can be initialized using str or int, not {}".format(type(obj)))
 
     def __int__(self):
         n = 0
@@ -75,21 +79,15 @@ class Roman(object):
         return Roman(int(self) + int(other))
 
 if __name__ == '__main__':
-    import optparse
-    #import argparse
-    parser = optparse.OptionParser()
-    parser.add_option("-i", "--integer", action="store_true", dest="reverse", help="convert integer to roman")
-    parser.add_option("-r", "--roman", action="store_false", dest="reverse", help="convert roman to integer")
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("numeral", help="Roman or integer numeral")
     parser.set_defaults(reverse=False)
 
-    options, args = parser.parse_args()
+    args = parser.parse_args()
 
-    if len(args) == 1:
-        if options.reverse:
-            r = Roman(int(args[0]))
-        else:
-            r = Roman(args[0])
-        print("{0} = {1}".format(r, int(r)))
-    else:
-        print("Usage: roman [-i|--integer|-r|--roman] <arg>", file=sys.stderr)
-
+    try:
+        r = Roman(int(args.numeral))
+    except ValueError:
+        r = Roman(args.numeral)
+    print("{0} = {1}".format(r, int(r)))
