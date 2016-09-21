@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-from distutils.core import setup
+from setuptools import setup, find_packages
 
 setup(
     name="Project",
@@ -9,6 +9,6 @@ setup(
     author="John Doe",
     author_email="john.doe@example.net",
     url="https://www.example.net/",
-    packages=["package"],
+    packages=find_packages(),
     scripts=["script"],
 )
