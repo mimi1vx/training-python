@@ -13,9 +13,9 @@ def benchmark(wrapped):
 
 def cache(wrapped):
     d = {}
-    def wrapper(*args, **kargs):
+    def wrapper(*args):
         if args not in d:
-            d[args] = wrapped(*args, **kargs)
+            d[args] = wrapped(*args)
         return d[args]
     return wrapper
 

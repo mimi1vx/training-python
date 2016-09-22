@@ -5,6 +5,10 @@ class Square:
         self.side = float(side)
 
     @property
+    def shape(self):
+        return "square"
+
+    @property
     def area(self):
         return self.side ** 2
 
