@@ -1,7 +1,6 @@
 import sys
 import shelve
 
-
 if __name__ == '__main__':
     try:
         db = shelve.open("test.db")

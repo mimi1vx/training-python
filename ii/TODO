@@ -3,3 +3,12 @@ example: print function with custom writer class
 
 PyCharm IDE
 debugging
+assertions
+classproperty, staticproperty
+  - http://stackoverflow.com/questions/128573/using-property-on-classmethods
+event-listener (or observer) pattern in Python
+
+
+## Probably for separate training...
+
+  * asynchronous python

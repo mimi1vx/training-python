@@ -12,18 +12,24 @@
     john.location = 'Prague'
     john.language = 'English'
 
+Examples: employee.py, employee2.py
+
 ## Class initialization and destruction
 
-    * `__init__()`, `__str__()`, `__repr__()`
+  * `__init__()`, `__str__()`, `__repr__()`
 
 Example: cls.py
+
+## Context manager (with statement)
+
+Example: context.py
 
 ## Attribute access
 
   * `__class__`
   * `__dict__`
-  * `.__getattr__()`, `__setattr__()`, `__delattr__()`
   * `getattr()`, `setattr()`, `delattr()`
+  * `.__getattr__()`, `__setattr__()`, `__delattr__()`
 
 Example: attr.py
 
@@ -31,9 +37,9 @@ Example: attr.py
 
 Example: prop.py
 
-## Context manager (with statement)
+## Standard method decorators
 
-Example: context.py
+    * @classmethod, @staticmethod
 
 ## Other
 

@@ -40,21 +40,23 @@ Python II (3 days)
   * 05 – Classes, methods, attributes
            – Special methods, class and static methods
            - Case study: Roman numbers
-           - Unit testing
-  * 06 - Persistence
+           - Case study: Roman numbers unit testing
+  * 06 – Exceptions
 
-  * HTTP application options
-  * Custom exceptions
-  * Logging and debugging
-  * Text processing using regular expressions
-  * Command line argument parsing
-  * Date and time handling
-  * Database system access
-  * Dynamic code generation
-  * Parallel programming, threads and processes
-  * Available literature
+  * 07 – Text processing
+           - Regular expressions
+  * 08 - Working with binary data
+  * 09 - Serialization and persistence
+  * 10 – HTTP client and server
 
-  * ? list comprehensions
+  * 11 – Logging and debugging
+  * 12 – Dynamic code generation
+  * 13 – Managing subprocesses
+  * 14 – Parallel programming, threads and processes
+  * 99 – Available literature
+
+  * ? Date and time handling
+  * ? Command line argument parsing
 
 Notes:
 
