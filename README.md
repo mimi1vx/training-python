@@ -30,13 +30,18 @@ Python II (3 days)
   * 02 – Python versions and 3.x and 2.x differences
            - Future features
   * 03 – Functions, argument list, argument dictionary
-  * 04 – Inline documentation
+           – Decorators, closures and nonlocal
+
+  * 04 – Generators and iterators
+           - Iterators
+           - Generators
+           - Generator, list and dictionary comprehensions
 
   * 05 – Classes, methods, attributes
-  * 06 – Special methods, class and static methods
-
-  * 07 – Decorators, closures and nonlocal
-  * 08 – Generators and iterators
+           – Special methods, class and static methods
+           - Case study: Roman numbers
+           - Unit testing
+  * 06 - Persistence
 
   * HTTP application options
   * Custom exceptions
