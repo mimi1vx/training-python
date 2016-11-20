@@ -15,4 +15,4 @@
 
 ## Summary
 
-Example: readwrite.py
+Example: readwrite.py (previous example once again rewritten, now for classes)

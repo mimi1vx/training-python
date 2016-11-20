@@ -10,10 +10,6 @@
   * urllib.urlopen
   * argparse
   * random.choice
-
-  * Look at the docs
-
-
   * urllib.urlopen
 
-  * ?distutils
+Look at the docs as well.

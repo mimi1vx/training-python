@@ -31,6 +31,8 @@ Example: script.py
   * `__init__.py`
   * `__main__.py`
 
+Example: package
+
 ## Automatic compilation
 
   * Examine directory structre after importing modules

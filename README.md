@@ -5,15 +5,12 @@ Python I (2 days)
   * 02 – Variables, objects, identity, assignment
           - Basic data types
           - Composite data types
-
   * 03 – Basic input/output and string formatting
   * 04 – Executable scripts, modules and packages
   * 05 – Control flow (loops, conditions, exceptions)
-
   * 06 – Input, output, file access, internationalization, unicode
   * 07 – Functions, local variables
   * 08 – Classes, instances, attributes, methods
-
   * 09 – Constructors and inheritance
   * 10 – Standard library bits
   * 11 – Available literature
@@ -46,8 +43,8 @@ Python II (3 days)
   * 07 – Text processing
            - Regular expressions
   * 08 - Working with binary data
-  * 09 - Serialization and persistence
   * 10 – HTTP client and server
+  * 09 - Serialization and persistence
 
   * 11 – Logging and debugging
   * 12 – Dynamic code generation

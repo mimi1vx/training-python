@@ -20,7 +20,7 @@
 
 ## Regular expression matching and parsing
 
-    import sys, re, datetime
+    import sys, re
 
     re_cz_date = re.compile(r"([0-9]{1,2})\.([0-9]{1,2}).([0-9]{4})")
 
