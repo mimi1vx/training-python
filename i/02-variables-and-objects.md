@@ -55,8 +55,10 @@ TODO: bitwise
     'th'
     >>> c[4:]
     'on'
-
-TODO string functions: strip, ..
+    >>> "sadf adsf sadf fdsa".split()
+    ['sadf', 'adsf', 'sadf', 'fdsa']
+    >>> "  adsffdsa    ".strip()
+    'adsffdsa'
 
 ## Composite types
 
@@ -81,4 +83,6 @@ TODO: sorted list, multidimensional array, chess, whatever
     >>> l1
     ['a', 'b', 'c', 'd', 'e']
     >>> l3 = list(l2) # new copy of l2, same as l2[:]
+
+TODO: copy, deepcopy
 
