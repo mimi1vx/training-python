@@ -1,0 +1,5 @@
+Python should support:
+
+  * additiona step argument - enumerate(something, start, step)
+  * classproperty
+
