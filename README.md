@@ -1,4 +1,6 @@
-Python I (2 days)
+# Python training material
+
+## Python I (2 days)
 
   * 00 – About Python
   * 01 – Interactive interpreter
@@ -15,7 +17,7 @@ Python I (2 days)
   * 10 – Standard library bits
   * 11 – Available literature
 
-Python II (3 days)
+## Python II (3 days)
 
   * 00 – Overview of topics from previous course
            - Variables, identity, assignment, data types
