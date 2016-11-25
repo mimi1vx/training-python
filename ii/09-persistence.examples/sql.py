@@ -16,7 +16,7 @@ if __name__ == '__main__':
                 value = sys.argv[3]
                 cursor.execute("INSERT OR REPLACE INTO data (key, value) VALUES (?, ?)", (key, value))
                 connection.commit()
-            cursor.execute("SELECT key, value FROM data WHERE key = ?", key)
+            cursor.execute("SELECT key, value FROM data WHERE key = ?", (key,))
             print("{0} = {1}".format(*next(cursor)))
         else:
             raise ValueError
@@ -25,4 +25,4 @@ if __name__ == '__main__':
     except KeyError:
         print("Key not found.")
     finally:
-        connection.close
+        connection.close()
