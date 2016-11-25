@@ -26,8 +26,8 @@ Example: context.py
 
 ## Attribute access
 
-  * `__class__`
-  * `__dict__`
+  * `__class__`, type()
+  * `__dict__`, vars()
   * `getattr()`, `setattr()`, `delattr()`
   * `.__getattr__()`, `__setattr__()`, `__delattr__()`
 
@@ -37,9 +37,11 @@ Example: attr.py
 
 Example: prop.py
 
+item.py TODO why doesn't work
+
 ## Standard method decorators
 
-    * @classmethod, @staticmethod
+  * @classmethod, @staticmethod
 
 ## Other
 

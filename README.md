@@ -30,18 +30,14 @@
            - Future features
   * 03 – Functions, argument list, argument dictionary
            – Decorators, closures and nonlocal
-
   * 04 – Generators and iterators
            - Iterators
            - Generators
            - Generator, list and dictionary comprehensions
-
   * 05 – Classes, methods, attributes
            – Special methods, class and static methods
            - Case study: Roman numbers
            - Case study: Roman numbers unit testing
-  * 06 – Exceptions
-
   * 07 – Text processing
            - Regular expressions
   * 08 - Working with binary data

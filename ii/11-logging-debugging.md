@@ -8,6 +8,8 @@
 
 Example: log.py
 
+TODO issues when not using basicconfig
+
 ## Python debugger
 
      python -m pdb log.py
@@ -15,4 +17,4 @@ Example: log.py
      next
      print(...)
 
-
+TODO sample debugger session

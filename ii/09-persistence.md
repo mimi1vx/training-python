@@ -4,7 +4,7 @@
 
 Useful for storing data or sending them over the network.
 
-### JSON
+### JSON, YAML
 
   * dumps, dump
   * loads, load
@@ -14,7 +14,17 @@ Useful for storing data or sending them over the network.
     with open("example.json", "w") as stream:
         json.dump({"asdf": 'zxxvc'}, stream)
 
+Online: http://echo.jsontest.com/key/value/one/two
+
 ### XML
+
+    >>> from lxml import etree
+    >>> p = etree.Element("p")
+    >>> p.text = "Hello"
+    >>> etree.tostring(p)
+    b'<p>Hello</p>'
+
+Example: writexml.py
 
 ### pickle
 

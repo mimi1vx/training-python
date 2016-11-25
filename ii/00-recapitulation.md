@@ -8,10 +8,14 @@
 
   * int, float
       - division, modulo, power
-  * str
-      - concatenation, pyth
+  * str, bytes
+      - concatenation, format, split
+      - file streams
+      - net streams
   * list, tuple
+  * iteration, for loops
   * dict, set
+
 
 ## Variables, identity, assignment
 
