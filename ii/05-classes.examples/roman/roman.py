@@ -52,6 +52,8 @@ class Roman(object):
             self._numeral = obj
         elif (isinstance(obj, int)):
             n = obj
+            if n < 1:
+                raise ValueError("Unsupported integer value: {}".format(n))
             self._numeral = ''
             for digit, value in DIGITS:
                 while value <= n:

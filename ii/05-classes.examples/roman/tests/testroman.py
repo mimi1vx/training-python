@@ -20,8 +20,10 @@ known_numerals = (
     ('MMMCMXCIX', 3999),
     ('MIX', 1009),
 )
-correct_numerals = ('I', 'V', 'IV')
-incorrect_numerals = ('', 'IIII', 'VIV', 'IVI', 'B', 'MMMM', '0', '1', 'IM', 'CIVIL', 'DIM', 'VIXI', 'XIVI', 'VLIV', 'CIL', 'MIC')
+correct_numerals = [r for r, d in known_numerals]
+incorrect_numerals = ['', 'IIII', 'VIV', 'IVI', 'B', 'MMMM', '0', '1', 'IM', 'CIVIL', 'DIM', 'VIXI', 'XIVI', 'VLIV', 'CIL', 'MIC']
+incorrect_decimals = [0, -1, -10]
+
 
 def test_correct_numerals():
     """Roman.is_roman_numeral should return True for correct roman numerals."""
@@ -36,6 +38,11 @@ def test_incorrect_numerals():
         assert_false(roman.Roman.is_roman_numeral(numeral),
             msg="'{0}' is a correct numeral.".format(numeral))
         assert_raises(ValueError, roman.Roman, numeral)
+
+def test_incorrect_decimals():
+    """Zero and negative integers are not supported."""
+    for number in incorrect_decimals:
+        assert_raises(ValueError, roman.Roman, number)
 
 def test_bad_type():
     """Roman.is_roman_numeral should raise TypeError for non-string arguments"""
