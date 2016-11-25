@@ -5,8 +5,14 @@ from __future__ import print_function
 import sys
 
 class Hello:
-    def set_defaults(self):
+    def __init__(self, lang):
         self.data = {}
+        self.lang = lang
+
+    def hello(self):
+        return self.data[self.lang]
+    
+    def set_defaults(self):
         self.data["en"] = "Hello!"
         self.data["cs"] = "Dobrý den!"
         self.data["sk"] = "Dobrý deň!"
@@ -24,7 +30,6 @@ class Hello:
                 print("{}: {}".format(key, value), file=stream)
 
     def read_file(self, filename):
-        self.data = {}
         with open(filename) as stream:
             for line in stream:
                 # Comment or empty line

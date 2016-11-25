@@ -37,7 +37,6 @@ def usage():
     sys.exit("Usage: {} read|write".format(sys.argv[0]))
 
 def main():
-    print(sys.argv)
     try:
         command = sys.argv[1]
     except IndexError:
