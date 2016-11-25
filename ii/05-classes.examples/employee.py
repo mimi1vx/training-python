@@ -1,11 +1,11 @@
-class Employee():
+class Employee(object):
     count = 0
 
     def __init__(self, name, language):
         self.name = name
         self.language = language
 
-        self.__class__.count += 1
+        type(self).count += 1
 
 if __name__ == '__main__':
     john = Employee("John Doe", "English")

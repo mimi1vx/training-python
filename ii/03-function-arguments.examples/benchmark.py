@@ -1,13 +1,15 @@
+#!/usr/bin/python
 from __future__ import print_function
 
+import time
+
 def benchmark(wrapped):
-    import time
-    def wrapper(*args, **kargs):
+    def wrapper(*args):
         start = time.time()
-        result = wrapped(*args, **kargs)
+        result = wrapped(*args)
         delta = time.time() - start
-        print("function `{}(*{}, **{})` took {:.3f}".format(
-                wrapped.__name__, args, kargs, delta))
+        print("function `{}(*{})` took {:.6f} seconds".format(
+                wrapped.__name__, args, delta))
         return result
     return wrapper
 
