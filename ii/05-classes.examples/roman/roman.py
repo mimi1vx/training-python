@@ -4,10 +4,6 @@
 """
 from __future__ import print_function
 import re
-import sys
-
-if sys.version_info.major == 2:
-    input = raw_input
 
 ROMAN_NUMERAL_REGEX_STRING = r"""
 ^                   # beginning of string
