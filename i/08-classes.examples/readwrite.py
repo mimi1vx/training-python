@@ -44,7 +44,7 @@ class Hello:
 
 class Application:
     def usage(self):
-        sys.exit("Usage: {} read|write".format(sys.argv[0]))
+        sys.exit("Usage: \n  {0} read|write\n  {0} hello LANG".format(sys.argv[0]))
 
     def write(self):
         hello = Hello()
@@ -59,6 +59,11 @@ class Application:
             sys.exit(e)
         print(hello.data)
 
+    def hello(self, lang):
+        hello = Hello(lang)
+        hello.read_file("file.txt")
+        print(hello.hello())
+
     def run(self):
         try:
             command = sys.argv[1]
@@ -69,6 +74,8 @@ class Application:
             self.write()
         elif command == "read":
             self.read()
+        elif command == "hello":
+            self.hello(sys.argv[2])
         else:
             self.usage()
 
