@@ -5,7 +5,7 @@ from __future__ import print_function
 import sys
 
 class Hello:
-    def __init__(self, lang):
+    def __init__(self, lang=None):
         self.data = {}
         self.lang = lang
 
