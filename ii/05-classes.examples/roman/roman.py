@@ -81,7 +81,6 @@ if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument("numeral", help="Roman or integer numeral")
-    parser.set_defaults(reverse=False)
 
     args = parser.parse_args()
 
