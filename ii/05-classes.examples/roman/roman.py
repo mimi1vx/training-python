@@ -1,3 +1,4 @@
+#!/usr/bin/python
 # encoding: utf-8
 """A library for using and converting roman numbers
 

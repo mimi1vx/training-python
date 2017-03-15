@@ -6,4 +6,4 @@ body = SubElement(html, "body")
 paragraph = SubElement(body, "p")
 paragraph.text = "Monthy Python's Flying Circus"
 
-print(tostring(html, method="html"))
+print(tostring(html, method="html").decode('utf-8'))

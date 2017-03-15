@@ -3,6 +3,8 @@
 
 from __future__ import print_function
 
+from io import open
+
 if __name__ == '__main__':
     texts = {}
     with open("file.txt") as stream:
