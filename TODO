@@ -1,6 +1,6 @@
 Python should support:
 
-  * additiona step argument - enumerate(something, start, step)
+  * additional step argument - enumerate(something, start, step)
   * classproperty
 
 Python 2.x doesn't seem to propagate exceptions from finally:
@@ -11,3 +11,12 @@ Python 2.x doesn't seem to propagate exceptions from finally:
         stream.close()
 
 TODO: why socket doesn't work with print (print("...".encode("ascii"), file=sock)
+
+subprocess universal_newlines best practice ???
+subprocess write to file descriptor 3....
+
+
+New trainings:
+
+  * web frameworks
+  * web services + authentication
