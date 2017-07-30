@@ -26,6 +26,9 @@ Online: http://echo.jsontest.com/key/value/one/two
 
 Example: writexml.py
 
+TODO: readxml.py
+TODO: make the examples full read+write examples with open files and stuff like that
+
 ### pickle
 
 ## Database access

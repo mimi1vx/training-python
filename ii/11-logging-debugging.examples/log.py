@@ -2,7 +2,7 @@ import sys
 import argparse
 
 import logging
-logging.basicConfig(format="{message}", style="{",  level=logging.INFO)
+logging.basicConfig(format="{message}", style="{", level=logging.INFO)
 
 log = logging.getLogger()
 

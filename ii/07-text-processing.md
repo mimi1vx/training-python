@@ -26,3 +26,13 @@
 
     for line in sys.stdin:
         print(tuple(int(field) for field in re_cz_date.match(line.strip()).groups()))
+
+
+TODO: Notes on format, jinja2, mako, notes on re, parser libraries, etc...
+
+## Text formats
+
+Example: markdown
+
+Example: mako, jinja2
+

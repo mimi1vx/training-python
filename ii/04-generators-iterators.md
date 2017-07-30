@@ -30,7 +30,7 @@ List and dictionary comprehensions:
 
 ## Generator class
 
-    class g():
+    class g:
         def __init__(self):
             self.counter = iter(range(10))
 
@@ -41,4 +41,4 @@ List and dictionary comprehensions:
         def __iter__(self):
             return self
 
-TODO: Python 2.x compat & a better way to do generator classes with inheritance?
+TODO: Python 2.x compat

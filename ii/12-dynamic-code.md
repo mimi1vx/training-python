@@ -7,3 +7,9 @@
 ## Code
 
     exec("a = 2 + 3")
+
+## Attribute access
+
+Example: switch.py
+
+TODO: Real world example...

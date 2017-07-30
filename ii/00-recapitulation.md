@@ -15,6 +15,7 @@
   * list, tuple
   * iteration, for loops
   * dict, set
+      - get, setdefault
 
 
 ## Variables, identity, assignment

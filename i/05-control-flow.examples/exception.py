@@ -8,8 +8,8 @@ if sys.version_info.major < 3:
     input = raw_input
 
 try:
-    x = int(input("x = "))
-    y = int(input("y = "))
+    x = float(input("x = "))
+    y = float(input("y = "))
     z = x / y
 except ValueError as e:
     print("Bad value: {}".format(e))

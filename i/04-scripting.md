@@ -18,6 +18,8 @@ Example: module.py
 
 Example: script.py
 
+TODO: `unicode_literals`, `print_function`
+
 ## Split script code
 
   * Detect script role by `__name__`

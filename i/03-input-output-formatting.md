@@ -5,6 +5,8 @@
     >>> print("Quick brown fox jumped over the lazy dog.")
     >>> print(["Quick", "brown", "fox", "jumped", "over", "the", "lazy", "dog.")
 
+TODO: end=".\n", sep="  "
+
 ## Simple input
 
     >>> print("Tell me your name: ", end='')
@@ -27,6 +29,6 @@
 
 ## Final examples
 
-    >>> a = input("a = ")
-    >>> b = input("b = ")
+    >>> a = int(input("a = "))
+    >>> b = int(input("b = "))
     >>> print("{} + {} = {}".format(a, b, a + b))

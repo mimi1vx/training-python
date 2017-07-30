@@ -17,3 +17,10 @@
   * Various frameworks on top of WSGI and other protocols
 
 Example: server.py
+
+play with requests
+
+    import requests
+    r = requests.get('https://api.github.com/events')
+    data = r.json()
+    print(data[0])

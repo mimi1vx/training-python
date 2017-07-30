@@ -7,7 +7,7 @@ class Example:
     def __repr__(self):
         return "{}({})".format(self.__class__.__name__, self._data)
 
-    def __hasitem__(self, name):
+    def __contains__(self, name):
         return name in self._data
 
     def __getitem__(self, name):
@@ -23,4 +23,6 @@ if __name__ == '__main__':
     a = Example()
     a['something'] = 5
     print(a)
+    print('something' in a)
+    print(a['something'])
     del a['something']
