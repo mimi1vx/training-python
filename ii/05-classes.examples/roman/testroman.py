@@ -22,7 +22,7 @@ known_numerals = (
 )
 correct_numerals = [r for r, d in known_numerals]
 incorrect_numerals = ['', 'IIII', 'VIV', 'IVI', 'B', 'MMMM', '0', '1', 'IM', 'CIVIL', 'DIM', 'VIXI', 'XIVI', 'VLIV', 'CIL', 'MIC']
-incorrect_decimals = [0, -1, -10]
+incorrect_decimals = [0, -1, -10, 4000, 4001, 10000, 1000000]
 
 
 def test_correct_numerals():
@@ -42,7 +42,10 @@ def test_incorrect_numerals():
 def test_incorrect_decimals():
     """Zero and negative integers are not supported."""
     for number in incorrect_decimals:
-        assert_raises(ValueError, roman.Roman, number)
+        try:
+            assert_raises(ValueError, roman.Roman, number)
+        except AssertionError:
+            raise AssertionError("Incorrect decimal {} didn't raise ValueError.".format(number))
 
 def test_bad_type():
     """Roman.is_roman_numeral should raise TypeError for non-string arguments"""
