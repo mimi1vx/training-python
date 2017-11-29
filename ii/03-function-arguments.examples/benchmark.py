@@ -19,6 +19,8 @@ def cache(wrapped):
         if args not in d:
             d[args] = wrapped(*args)
         return d[args]
+    # Hack to keep the name displayed correctly
+    wrapper.__name__ = wrapped.__name__
     return wrapper
 
 @benchmark

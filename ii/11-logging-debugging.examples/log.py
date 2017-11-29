@@ -2,7 +2,7 @@ import sys
 import argparse
 
 import logging
-logging.basicConfig(format="{message}", style="{", level=logging.INFO)
+logging.basicConfig(format="%(message)s", level=logging.INFO)
 
 log = logging.getLogger()
 
@@ -14,6 +14,13 @@ if __name__ == '__main__':
 
     if args.debug:
         log.setLevel(logging.DEBUG)
+
+    try:
+        a = 1/0
+    except:
+        log.exception("things went wrong")
+        #from traceback import format_exc
+        #log.debug(format_exc())
 
     log.debug("sys.argv = {}, args = {}".format(sys.argv, args))
 

@@ -74,8 +74,8 @@ class Roman(object):
     def __repr__(self):
         return "Roman('{0}')".format(self._numeral)
 
-    def __add__(self, other):
-        return Roman(int(self) + int(other))
+for name in ['__add__', '__sub__', '__mul__']:
+    setattr(Roman, name, lambda self, other: Roman(getattr(int(self), name)(int(other))))
 
 if __name__ == '__main__':
     import argparse

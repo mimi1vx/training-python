@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 import math
 import numbers
 
@@ -11,23 +13,23 @@ class Square:
 
     @property
     def side(self):
-        return self._side
+        return self.__side
 
     @side.setter
     def side(self, side):
         if not isinstance(side, numbers.Number):
             raise TypeError("Use numeric value.")
-        self._side = float(side)
+        self.__side = float(side)
 
     @property
     def area(self):
-        return self._side ** 2
+        return self.__side ** 2
 
     @area.setter
     def area(self, area):
         if not isinstance(area, numbers.Number):
             raise TypeError("Use numeric value.")
-        self._side = math.sqrt(area)
+        self.__side = math.sqrt(area)
 
 if __name__ == '__main__':
     square = Square()

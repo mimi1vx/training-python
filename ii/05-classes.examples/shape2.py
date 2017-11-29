@@ -10,12 +10,12 @@ class Shape:
 
 class Rectangle(Shape):
     def __init__(self, fill='x', width=0, height=0):
-        Shape.__init__(self, fill)
+        super().__init__(fill)
         self.width = width
         self.height = height
 
     def query_user(self):
-        Shape.query_user(self)
+        super().query_user()
         self.width = int(input("Width: "))
         self.height = int(input("Height: "))
 

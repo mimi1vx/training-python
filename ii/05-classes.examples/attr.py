@@ -2,13 +2,10 @@ class Example:
     """Example class that shows attribute access special methods""" 
 
     def __init__(self):
-        self.__dict__['_data'] = {}
+        self._data = {}
 
     def __repr__(self):
         return "{}({})".format(self.__class__.__name__, self._data)
-
-    def __hasattr__(self, name):
-        return name in self._data
 
     def __getattr__(self, name):
         return self._data[name]
