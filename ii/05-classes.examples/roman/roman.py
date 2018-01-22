@@ -49,7 +49,7 @@ class Roman(object):
             self._numeral = obj
         elif (isinstance(obj, int)):
             n = obj
-            if n < 1:
+            if n < 1 or n >= 4000:
                 raise ValueError("Unsupported integer value: {}".format(n))
             self._numeral = ''
             for digit, value in DIGITS:
