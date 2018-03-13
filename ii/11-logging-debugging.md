@@ -18,3 +18,4 @@ TODO issues when not using basicconfig
      print(...)
 
 TODO sample debugger session
+TODO code module, run an interactive interpretter anywhere, pdb.set_trace()

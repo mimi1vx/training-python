@@ -4,9 +4,9 @@
 
     eval("2 + 3")
 
-## Code
-
     exec("a = 2 + 3")
+
+Use cases: Templating system, debugger, interactive interpretter.
 
 ## Attribute access
 

@@ -3,7 +3,7 @@
 ## Modules
 
   * File with `.py` suffix
-  * Import using interactive interpreter
+  * Import using interactive interpreter; sys.path
   * Relative module import (from another module)
   * Module can be a script at the same time
 

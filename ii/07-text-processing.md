@@ -8,7 +8,7 @@
 ## Reading a text file by line
 
     with open("file.txt") as stream:
-        for line in stream
+        for line in stream:
             print(repr(line))
 
 ## Reading from stdin by line

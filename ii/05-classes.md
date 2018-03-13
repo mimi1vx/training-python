@@ -14,8 +14,6 @@
 
 Examples: employee.py, employee2.py
 
-Note: Python 2.x new-style class syntax.
-
 ## Class initialization and destruction
 
   * `__init__()`, `__str__()`, `__repr__()`
@@ -69,4 +67,4 @@ https://docs.python.org/3/reference/datamodel.html#special-method-names
 
 ## Inheritance
 
-Example: shape.py
+Example: shape.py, shape2.py

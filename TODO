@@ -16,6 +16,13 @@ subprocess universal_newlines best practice ???
 subprocess write to file descriptor 3....
 
 
+Questions:
+
+python i: 
+
+  * how to check for empty list (bool?)
+
+
 New trainings:
 
   * web frameworks

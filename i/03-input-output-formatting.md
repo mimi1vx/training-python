@@ -3,7 +3,7 @@
 ## Simple output
 
     >>> print("Quick brown fox jumped over the lazy dog.")
-    >>> print(["Quick", "brown", "fox", "jumped", "over", "the", "lazy", "dog.")
+    >>> print("Quick", "brown", "fox", "jumped", "over", "the", "lazy", "dog.")
 
 TODO: end=".\n", sep="  "
 
@@ -13,6 +13,8 @@ TODO: end=".\n", sep="  "
     >>> name = input()
 
     >>> print("Your name is", input("Tell me your name: "))
+
+TODO: integer/float example
 
 ## Basic formatting features
 

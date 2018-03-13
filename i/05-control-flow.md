@@ -11,7 +11,7 @@
       - Example: enumeration.py
       - Example: range.py
   * A complex for loop (for-break--else)
-      -Example: prime.py
+      - Example: prime.py
   * Loop with continue
 
 ## Exception handling

@@ -40,5 +40,3 @@ List and dictionary comprehensions:
 
         def __iter__(self):
             return self
-
-TODO: Python 2.x compat
