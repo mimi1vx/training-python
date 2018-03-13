@@ -1,6 +1,6 @@
-# Scripting
+## Modules and scripting
 
-## Modules
+### Modules
 
   * File with `.py` suffix
   * Import using interactive interpreter; sys.path
@@ -9,7 +9,7 @@
 
 Example: module.py
 
-## Script
+### Script
 
   * UNIX: Executable file with shebang, not necessarily with `.py` suffix
       - Shebang for python, python2 or python3
@@ -18,16 +18,14 @@ Example: module.py
 
 Example: script.py
 
-TODO: `unicode_literals`, `print_function`
-
-## Split script code
+### Split script code
 
   * Detect script role by `__name__`
   * Split between two parts
       - Module part
       - Main code doing the script work
 
-## Package
+### Package
 
   * Directory structure
   * `__init__.py`
@@ -35,6 +33,6 @@ TODO: `unicode_literals`, `print_function`
 
 Example: package
 
-## Automatic compilation
+### Automatic compilation
 
   * Examine directory structre after importing modules

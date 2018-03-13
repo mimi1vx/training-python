@@ -1,8 +1,4 @@
-# Variables, objects and types
-
-TODO: bitwise
-
-## Simple types
+## Variables, objects and types
 
     >>> text = "Monty Python – Life of Brian"
     >>> stars = 75 * '*'
@@ -37,7 +33,7 @@ TODO: bitwise
     >>> q = 1.2345678
     >>> round(q)
 
-## String operations
+### String operations
 
     >>> a = "asdf"
     >>> b = "zxcv"
@@ -60,16 +56,27 @@ TODO: bitwise
     >>> "  adsffdsa    ".strip()
     'adsffdsa'
 
-## Composite types
+### Composite types
 
     >>> l = [1, 2, 3, 4]
     >>> t = (1, 2, 3, 4)
     >>> d = {"one": 1, "two": 2, "three": 3}
     >>> s = set([1, 2, 3, 4])
 
-TODO: sorted list, multidimensional array, chess, whatever
+### List operations
 
-## Identity
+Sorting and non-repeating sequences:
+
+    >>> sorted([1, 5, 4, 2, 3, 2, 1, 4])
+    [1, 1, 2, 2, 3, 4, 4, 5]
+    >>> sorted(set([1, 5, 4, 2, 3, 2, 1, 4]))
+    [1, 2, 3, 4, 5]
+
+Multi-dimensional arrays:
+
+    >>> sudoku = [[1, 2, 3], [4, 5, 6], [7. 8. 9]]
+
+### Object identity
 
     >>> l1 = ['a', 'b', 'c', 'd']
     >>> id(l1)
@@ -82,7 +89,19 @@ TODO: sorted list, multidimensional array, chess, whatever
     >>> l2.append('e')
     >>> l1
     ['a', 'b', 'c', 'd', 'e']
-    >>> l3 = list(l2) # new copy of l2, same as l2[:]
+    >>> l3 = list(l2) # new copy of l2, same as l2[:] or copy.copy(l2)
 
-TODO: copy, deepcopy
+Shallow and deep copying:
 
+    >>> import copy
+    >>> l1 = [1, 2, 3, [4, 5]]
+    >>> l2 = copy.copy(l1)
+    >>> l3 = copy.deepcopy(l1)
+    >>> l1 is l2
+    False
+    >>> l1[3] is l2[3]
+    True
+    >>> l1 is l3
+    False
+    >>> l1[3] is l3[3]
+    False
