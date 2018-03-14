@@ -1,14 +1,13 @@
 #!/usr/bin/python
 
+# Implementation of (item ** 2 for item in range(10))
+
 class Gen():
     def __init__(self):
         self.counter = iter(range(10))
 
     def __next__(self):
-        n = next(self.counter)
-        return(n**2)
-    # Python 2.x compatibility
-    next = __next__
+        return next(self.counter) ** 2
 
     def __iter__(self):
         return self

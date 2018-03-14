@@ -53,19 +53,18 @@ class Roman(object):
                 raise ValueError("Unsupported integer value: {}".format(n))
             self._numeral = ''
             for digit, value in DIGITS:
-                while value <= n:
-                    self._numeral += digit
-                    n -= value
+                count, n = divmod(n, value)
+                self._numeral += digit * count
         else:
             raise TypeError("Roman numbers can be initialized using str or int, not {}".format(type(obj)))
 
     def __int__(self):
         n = 0
-        i = 0
+        numeral = self._numeral
         for digit, value in DIGITS:
-            while self._numeral[i:i+len(digit)] == digit:
-                i += len(digit)
+            while numeral.startswith(digit):
                 n += value
+                numeral = numeral[len(digit):]
         return n
 
     def __str__(self):
@@ -73,6 +72,9 @@ class Roman(object):
 
     def __repr__(self):
         return "Roman('{0}')".format(self._numeral)
+
+    #def __add__(self, other):
+    #    return Roman(int(self) + int(other))
 
 for name in ['__add__', '__sub__', '__mul__']:
     setattr(Roman, name, lambda self, other: Roman(getattr(int(self), name)(int(other))))

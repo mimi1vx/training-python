@@ -1,8 +1,11 @@
+#!/usr/bin/python3
+
 import sys
 import argparse
+import pdb
 
 import logging
-logging.basicConfig(format="%(message)s", level=logging.INFO)
+logging.basicConfig(style="{", format="{message}", level=logging.INFO)
 
 log = logging.getLogger()
 
@@ -15,6 +18,8 @@ if __name__ == '__main__':
     if args.debug:
         log.setLevel(logging.DEBUG)
 
+    log.debug("sys.argv = {}, args = {}".format(sys.argv, args))
+
     try:
         a = 1/0
     except:
@@ -22,6 +27,5 @@ if __name__ == '__main__':
         #from traceback import format_exc
         #log.debug(format_exc())
 
-    log.debug("sys.argv = {}, args = {}".format(sys.argv, args))
 
     log.info("Goodbye.")
