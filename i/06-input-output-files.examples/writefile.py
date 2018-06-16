@@ -1,7 +1,4 @@
-#!/usr/bin/python
-# encoding: utf-8
-
-from __future__ import print_function
+#!/usr/bin/python3
 
 if __name__ == '__main__':
     with open("file.txt", "w") as stream:
