@@ -18,11 +18,11 @@ Examples: employee.py, employee2.py
 
   * `__init__()`, `__str__()`, `__repr__()`
 
-Example: cls.py
+Example: `cls.py`
 
 ## Context manager (with statement)
 
-Example: context.py
+Example: `context.py`
 
 ## Item/mapping protocol
 
@@ -31,7 +31,7 @@ Example: context.py
   * `__delitem__()`
   * Related `__contains__()`
 
-Example: item.py
+Example: `item.py`
 
 ## Attribute access
 
@@ -40,11 +40,11 @@ Example: item.py
   * `getattr()`, `setattr()`, `delattr()`
   * `__getattr__()`, `__setattr__()`, `__delattr__()`
 
-Example: attr.py
+Example: `attr.py`
 
 ## Properties
 
-Example: prop.py
+Example: `prop.py`
 
 ## Standard method decorators
 
@@ -67,4 +67,4 @@ https://docs.python.org/3/reference/datamodel.html#special-method-names
 
 ## Inheritance
 
-Example: shape.py, shape2.py
+Example: `shape.py`, `shape2.py`

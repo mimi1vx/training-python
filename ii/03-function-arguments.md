@@ -15,9 +15,11 @@
 
 ## Variable scope
 
- * Global (default in top-level, `global` in function)
- * Local (default in functions)
- * Non-local (with nested functions)
+  * Global (default in top-level, `global` in function)
+  * Local (default in functions)
+  * Non-local (with nested functions)
+
+<!-- end of list -->
 
     def make_counter():
         count = 0
@@ -31,6 +33,8 @@
 
   * Positional and keyword arguments
   * Default argument values
+
+<!-- end of list -->
 
     print("asdf", "zxcv")
     print("asdf", "zxcv", sep=":")
@@ -60,10 +64,10 @@ Accepting arguments:
         print(args)
         print(kargs)
 
-Note: Distinction between passing a list/dict and passing positional/keyword arguments from a list/dict using */** notation.
+Note: Distinction between passing a list/dict and passing positional/keyword arguments from a list/dict using `*`/`**` notation.
 
-TODO: functools.partial and its source code
+See also: `functools.partial` and its source code.
 
 ## Decorators
 
-Example: benchmark.py
+Example: `benchmark.py`

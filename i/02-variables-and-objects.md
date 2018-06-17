@@ -1,4 +1,4 @@
-## Variables, objects and types
+# Variables, objects and types
 
     >>> text = "Monty Python – Life of Brian"
     >>> stars = 75 * '*'
@@ -33,7 +33,7 @@
     >>> q = 1.2345678
     >>> round(q)
 
-### String operations
+## String operations
 
     >>> a = "asdf"
     >>> b = "zxcv"
@@ -56,14 +56,14 @@
     >>> "  adsffdsa    ".strip()
     'adsffdsa'
 
-### Composite types
+## Composite types
 
     >>> l = [1, 2, 3, 4]
     >>> t = (1, 2, 3, 4)
     >>> d = {"one": 1, "two": 2, "three": 3}
     >>> s = set([1, 2, 3, 4])
 
-### List operations
+## List operations
 
 Sorting and non-repeating sequences:
 
@@ -76,7 +76,7 @@ Multi-dimensional arrays:
 
     >>> sudoku = [[1, 2, 3], [4, 5, 6], [7. 8. 9]]
 
-### Object identity
+## Object identity
 
     >>> l1 = ['a', 'b', 'c', 'd']
     >>> id(l1)

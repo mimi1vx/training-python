@@ -1,4 +1,11 @@
-## About Python
+---
+title: Python II
+author: Pavel Šimerda © 2017–2018
+---
+
+Location: `https://github.com/devel-training/python`
+
+# About Python
 
   * Named after Monty Python
   * First released in 1991

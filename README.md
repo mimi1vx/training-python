@@ -1,7 +1,7 @@
 # Python training notes by Pavel Šimerda
 
   * [Python I](https://github.com/devel-training/python/tree/master/i)
-  * [Python II](https://github.com/devel-training/python/tree/master/i)
+  * [Python II](https://github.com/devel-training/python/tree/master/ii)
 
 Notes:
 

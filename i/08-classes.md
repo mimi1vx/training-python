@@ -15,8 +15,10 @@
 
 ## Summary
 
-Example: readwrite.py (previous example once again rewritten, now for classes)
+Example: `readwrite.py` (previous example once again rewritten, now for classes)
 
+<!---
 TODO: empty class, dynamic attr, 
 isinstance, issubclass
 __subclasses__, __bases__
+-->

@@ -11,6 +11,5 @@
   * argparse
   * random.choice
   * urllib.urlopen
-  * six
 
 Look at the docs as well.

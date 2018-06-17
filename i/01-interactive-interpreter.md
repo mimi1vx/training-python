@@ -1,12 +1,12 @@
-## Interactive interpreter
+# Interactive interpreter
 
-### Usage
+## Usage
 
   * Learning Python and testing specific features
   * Interactive calculations
   * Interactive data processing and conversion
 
-### Simple calculations
+## Simple calculations
 
     >>> 5 + 4
     9
@@ -21,7 +21,7 @@
     >>> 2 ** 8
     256
 
-### Bonus: Bitwise operations
+## Bonus: Bitwise operations
 
     >>> bin(0b01010101 & 0b00110011)
     '0b10001'

@@ -1,6 +1,6 @@
-## Basic input, output and formatting
+# Basic input, output and formatting
 
-### Simple output
+## Simple output
 
     >>> print("Quick brown fox jumped over the lazy dog.")
     Quick brown fox jumped over the lazy dog.
@@ -11,13 +11,13 @@
     >>> print("a", "b", "c", "d", sep="/")
     a/b/c/d
 
-### Simple input
+## Simple input
 
     >>> print("Tell me your name: ", end='')
     >>> name = input()
     >>> print("Your name is", input("Tell me your name: "))
 
-### Basic formatting features
+## Basic formatting features
 
     >>> text = "My name is {}."
     >>> print(text.format("John"))
@@ -30,7 +30,7 @@
     >>> print("{} + {} = {}".format(2, 3, 2 + 3))
     2 + 3 = 5
 
-### Final example
+## Final example
 
     >>> a = int(input("a = "))
     >>> b = int(input("b = "))

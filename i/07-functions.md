@@ -1,9 +1,9 @@
-## Functions and local variables
+# Functions and local variables
 
   * A function is an object describing a standalone piece of code
   * Variables assigned in a function are local by default
 
-### Function definitions and calls
+## Function definitions and calls
 
     >>> import math
     >>> def triangle_area(a, b, c):
@@ -26,4 +26,4 @@ Behind the scenes:
     >>> kwargs = {"a": "alpha", "b": "beta", "c": "gamma"}
     >>> f(*args, *kwargs)
 
-Example: readwrite.py (previous example rewritten in functions)
+Example: `readwrite.py` (previous example rewritten in functions)

@@ -1,3 +1,8 @@
+---
+title: Python II
+author: Pavel Šimerda © 2017–2018
+---
+
 # Recapitulation of expected Python skills
 
 ## Interactive interpretter
@@ -24,6 +29,8 @@
   * nested mutable containers and deep copy
   * recursive objects
 
+<!-- end of list -->
+
     import copy
 
     l1 = [1, 2, 3, [4, 5]]
@@ -38,6 +45,8 @@
 ## Basic input and output
 
   * print, format, input
+
+<!-- end of list -->
 
     >>> a = input("a = ")
     >>> b = input("b = ")

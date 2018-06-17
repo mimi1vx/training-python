@@ -13,6 +13,8 @@
   * Generator comprehension from `range(10)` nd `count()`.
   * Generator comprehension from a file
 
+<!-- end of list -->
+
     (x**2 for x in range(10))
 
     (x**2 for x in itertools.count())

@@ -2,11 +2,11 @@
 
 ## Inheritance and constructors
 
-Example: shapes.py
+Example: `shapes.py`
 
 ## Dynamic type inspection
 
-  * isinstance(shape, Shape)
-  * isinstance(shape, Square)
+  * `isinstance(shape, Shape)`
+  * `isinstance(shape, Square)`
 
 Typecasting is not needed in Python object model.

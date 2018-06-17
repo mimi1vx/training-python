@@ -26,8 +26,10 @@ Online: http://echo.jsontest.com/key/value/one/two
 
 Example: writexml.py
 
+<!---
 TODO: readxml.py
 TODO: make the examples full read+write examples with open files and stuff like that
+-->
 
 ### pickle
 
@@ -37,8 +39,8 @@ TODO: make the examples full read+write examples with open files and stuff like 
 
 Simple pythonic dictionary-like store: shelve
 
-Example: db.py
+Example: `db.py`
 
 ### SQL
 
-Example: sql.py
+Example: `sql.py`

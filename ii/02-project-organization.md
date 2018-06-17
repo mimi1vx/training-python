@@ -41,6 +41,8 @@
 
   * Installation script `setup.py` using distutils
 
+<!-- end of list -->
+
     $ python setup.py --name
     $ python setup.py --version
     $ python setup.py --author
