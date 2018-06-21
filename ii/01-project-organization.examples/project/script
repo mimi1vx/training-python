@@ -1,9 +1,8 @@
-#!/usr/bin/python
-# encoding: utf-8
-
-from __future__ import print_function
+#!/usr/bin/python3
 
 import package.subpackage.module
+import sys
 
 example = package.subpackage.module.Example()
 print(example.text)
+print(sys.path)

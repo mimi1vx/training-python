@@ -1,17 +1,16 @@
-#!/usr/bin/python
-# encoding: utf-8
+#!/usr/bin/python3
+
 """A library for using and converting roman numbers
 
 """
-from __future__ import print_function
 import re
 
 ROMAN_NUMERAL_REGEX_STRING = r"""
 ^                   # beginning of string
 M{0,3}              # thousands: 0, M, MM, MMM
-(D?C{0,3}|C?D|CM)   # hundreds: 0, C, CC, CCC, CD, D, DC, DCC, DCCC, CM
-(L?X{0,3}|X?L|XC)   # tens: 0, X, XX, XXX, XL, L, LX, LXX, LXXX, XC
-(V?I{0,3}|I?V|IX)   # units: 0, I, II, III, IV, V, VI, VII, VIII, IX
+(D?C{0,3}|CD|CM)    # hundreds: 0, C, CC, CCC, CD, D, DC, DCC, DCCC, CM
+(L?X{0,3}|XL|XC)    # tens: 0, X, XX, XXX, XL, L, LX, LXX, LXXX, XC
+(V?I{0,3}|IV|IX)    # units: 0, I, II, III, IV, V, VI, VII, VIII, IX
 $                   # end of string
 """
 
@@ -59,25 +58,43 @@ class Roman(object):
             raise TypeError("Roman numbers can be initialized using str or int, not {}".format(type(obj)))
 
     def __int__(self):
-        n = 0
         numeral = self._numeral
+
+        result = 0
         for digit, value in DIGITS:
             while numeral.startswith(digit):
-                n += value
+                result += value
                 numeral = numeral[len(digit):]
-        return n
+        return result
 
     def __str__(self):
         return self._numeral
 
     def __repr__(self):
         return "Roman('{0}')".format(self._numeral)
+        
+    def __eq__(self, other):
+        return str(self) == str(other)
 
-    #def __add__(self, other):
-    #    return Roman(int(self) + int(other))
+#    def __add__(self, other):
+#        return Roman(int(self) + int(other))
 
+#    def __add__(self, other):
+#        return Roman(int(self).__add__(int(other)))
+
+#def _add_operator(self, other):
+#    return Roman(getattr(int(self), '__add__')(int(other))
+#
+#Roman.__add__ = _add_operator
+#setattr(Roman, '__add__', _add_operator)
+
+def _make_operator(name):
+    def _operator(self, other):
+        return Roman(getattr(int(self), name)(int(other)))
+    return _operator
+        
 for name in ['__add__', '__sub__', '__mul__']:
-    setattr(Roman, name, lambda self, other: Roman(getattr(int(self), name)(int(other))))
+    setattr(Roman, name, _make_operator(name))
 
 if __name__ == '__main__':
     import argparse

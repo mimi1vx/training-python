@@ -30,6 +30,8 @@ def cache(initial_data):
 def compute(a):
     return 2**a
 
+#compute = benchmark(compute)
+
 if __name__ == '__main__':
     x = compute(1000000)
     x = compute(1000000)
@@ -38,3 +40,8 @@ if __name__ == '__main__':
     x = compute(100000000)
     x = compute(100000000)
     x = compute(100000000)
+
+#class:
+#    @user_has_privilege("MODIFY")
+#    def handle_modification(self, data):
+#        return True

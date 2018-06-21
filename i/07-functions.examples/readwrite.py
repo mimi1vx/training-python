@@ -46,7 +46,8 @@ def main():
             data = read_file("file.txt")
         except FileNotFoundError as e:
             sys.exit(e)
-        print(data)
+        else:
+            print(data)
     else:
         usage()
 
