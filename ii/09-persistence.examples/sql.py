@@ -23,7 +23,7 @@ if __name__ == '__main__':
         else:
             raise ValueError
     except (IndexError, ValueError):
-        print("Usage:\n  db get <key>\n  db\n", end="")
+        print("Usage:\n  db create\n  db get <key>\n  db set <key> <value>\n", end="")
     except KeyError:
         print("Key not found.")
     finally:
