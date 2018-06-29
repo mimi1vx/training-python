@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 from wsgiref.simple_server import make_server
 
 def application(environ, start_response):
@@ -7,5 +9,6 @@ def application(environ, start_response):
     yield "<b>TEST</b>".encode("utf-8")
 
 if __name__ == '__main__':
+    # TODO: IPv6 apparently not used by default.
     server = make_server('', 8000, application)
     server.serve_forever()

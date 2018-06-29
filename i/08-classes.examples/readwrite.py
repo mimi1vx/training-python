@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 
-from __future__ import print_function
-
 import sys
 
 class Hello:
@@ -9,8 +7,10 @@ class Hello:
         self.data = {}
         self.lang = lang
 
-    def hello(self):
-        return self.data[self.lang]
+    def hello(self, lang=None):
+        if lang is None:
+            lang = self.lang
+        return self.data[lang]
     
     def set_defaults(self):
         self.data["en"] = "Hello!"

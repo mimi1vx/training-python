@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import sys
 import shelve
 
@@ -12,9 +14,9 @@ if __name__ == '__main__':
                 db[key] = sys.argv[3]
             print("{0} = {1}".format(key, db[key]))
         else:
-            raise ValueError
+            raise ValueError("Bad argument.")
     except (IndexError, ValueError):
-        print("Usage:\n  db get <key>\n  db\n", end="")
+        print("Usage:\n  db get <key>\n  db set <key> <value>\n", end="")
     except KeyError:
         print("Key not found.")
     finally:

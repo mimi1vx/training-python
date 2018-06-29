@@ -1,9 +1,5 @@
 #!/usr/bin/python3
 
-"""
-Python 3.x only example featuring inheritance and `super()`.
-"""
-
 class Shape:
     def __init__(self):
         super().__init__()

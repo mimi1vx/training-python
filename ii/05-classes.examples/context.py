@@ -3,10 +3,11 @@ class Example:
 
     def __enter__(self):
         print("Entering")
+        return self
 
     def __exit__(self, exc_type, exc_value, traceback):
         print("Exiting")
 
 if __name__ == '__main__':
     with Example() as e:
-        print("Block")
+        print("Block: {}".format(e))

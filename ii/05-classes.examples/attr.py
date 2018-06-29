@@ -2,7 +2,7 @@ class Example:
     """Example class that shows attribute access special methods""" 
 
     def __init__(self):
-        self._data = {}
+        vars(self)['_data'] = {}
 
     def __repr__(self):
         return "{}({})".format(self.__class__.__name__, self._data)

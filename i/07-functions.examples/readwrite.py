@@ -1,7 +1,4 @@
-#!/usr/bin/python
-# encoding: utf-8
-
-from __future__ import print_function
+#!/usr/bin/python3
 
 import sys
 
@@ -49,7 +46,8 @@ def main():
             data = read_file("file.txt")
         except FileNotFoundError as e:
             sys.exit(e)
-        print(data)
+        else:
+            print(data)
     else:
         usage()
 

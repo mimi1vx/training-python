@@ -1,7 +1,4 @@
-#!/usr/bin/python
-# encoding: utf-8
-
-from __future__ import print_function
+#!/usr/bin/python3
 
 from io import open
 

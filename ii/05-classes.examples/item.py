@@ -5,7 +5,7 @@ class Example:
         self._data = {}
 
     def __repr__(self):
-        return "{}({})".format(self.__class__.__name__, self._data)
+        return "{}({})".format(type(self).__name__, self._data)
 
     def __contains__(self, name):
         return name in self._data
