@@ -3,15 +3,15 @@
 import sys
 
 class Hello:
-    def __init__(self, lang=None):
+    def __init__(self):
         self.data = {}
-        self.lang = lang
 
-    def hello(self, lang=None):
-        if lang is None:
-            lang = self.lang
+    def clear(self):
+        self.data.clear()
+
+    def hello(self, lang):
         return self.data[lang]
-    
+
     def set_defaults(self):
         self.data["en"] = "Hello!"
         self.data["cs"] = "Dobrý den!"
@@ -43,42 +43,43 @@ class Hello:
                 self.data[lang.strip()] = text.strip()
 
 class Application:
-    def usage(self):
-        sys.exit("Usage: \n  {0} read|write\n  {0} hello LANG".format(sys.argv[0]))
+    def __init__(self, filename):
+        self.filename = filename
 
-    def write(self):
+    def usage(self, name):
+        print("Usage: \n  {0} read|write\n  {0} hello LANG".format(name))
+
+    def cmd_write(self):
         hello = Hello()
         hello.set_defaults()
-        hello.write_file("file.txt")
+        hello.write_file(self.filename)
 
-    def read(self):
+    def cmd_read(self):
         hello = Hello()
-        try:
-            hello.read_file("file.txt")
-        except FileNotFoundError as e:
-            sys.exit(e)
+        hello.read_file(self.filename)
         print(hello.data)
 
-    def hello(self, lang):
-        hello = Hello(lang)
-        hello.read_file("file.txt")
-        print(hello.hello())
+    def cmd_hello(self, lang):
+        hello = Hello()
+        hello.read_file(self.filename)
+        print(hello.hello(lang))
 
-    def run(self):
+    def run(self, argv=sys.argv):
         try:
-            command = sys.argv[1]
+            command = argv[1]
         except IndexError:
-            self.usage()
+            self.usage(argv[0])
+            return
 
         if command == "write":
-            self.write()
+            self.cmd_write()
         elif command == "read":
-            self.read()
+            self.cmd_read()
         elif command == "hello":
-            self.hello(sys.argv[2])
+            self.cmd_hello(argv[2])
         else:
-            self.usage()
+            self.usage(argv[0])
 
 if __name__ == '__main__':
-    application = Application()
+    application = Application("file.txt")
     application.run()
